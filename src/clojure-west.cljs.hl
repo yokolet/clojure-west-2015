@@ -1,0 +1,160 @@
+(page "clojure-west.html"
+  (:require [hoplon.reveal :refer [slideshow chapter slide notes highlight quicklist bullet]]
+            [hoplon.util :as u]
+            [tailrecursion.hoplon.reload :as r]))
+
+(r/reload-all)
+
+(defn chapter-intro []
+  (chapter :title ""
+           (slide :title (h2 "The Joys and Pains to Write a Clojure Curriculum for Beginners")
+                  (br)
+                  (br)
+                  (bullet (h3 :class "purple" "Yoko Harada"))
+                  (bullet (h3 :class "purple" "@yokolet"))
+                  (bullet (h3 :class "ashgray" "Clojure/West 2015")))
+
+           (slide :title "Who is Yoko?"
+                  (br)
+                  (ul
+                   (li :class "fragment" :data-fragment-index "1"
+                       (h3 "Developer at Cognitect, Inc.")
+                       (bullet (h3 (a :target "_blank" :href "http://cognitect.com/" "http://cognitect.com/"))))
+                   (li :class "fragment" :data-fragment-index "2"
+                       (h3 "The First ClojureBridge TA"))
+                   (li :class "fragment" :data-fragment-index "3"
+                       (h3 "ClojureBridge Board Member"))
+                   (li :class "fragment" :data-fragment-index "4"
+                       (h3 "RailsGirls origanizer/RailsBridge TA"))
+                   (li :class "fragment" :data-fragment-index "5"
+                       (h3 :class "purple" "@yokolet"))))
+
+           (slide :title "Think of ..."
+                  (bullet "Your wife if she is not a (Clojure) programmer")
+                  (bullet "Your girlfriend if she is not a ...")
+                  (bullet "Your female co-worker if ...")
+                  (bullet "Your daughter if ...")
+                  (bullet "Your mom if ...")
+                  (br)
+                  (h3 "What if she tries Clojure?")
+                  )
+
+           (slide :title "What is ClojureBridge?"
+                  (bullet (h4 (a :target "_blank" :href "http://clojurebridge.org/" "http://clojurebridge.org/")))
+                  (bullet "Free, beginner-friendly Clojure workshops for women")
+                  (img :src "/clojure-west/img/clojurebridgedotorg.png" :style "border:0px")
+                  )
+
+           (slide :title "ClojureBridge Workshops"
+                  (u/workshop-list u/workshops))
+
+           (slide :title "Local Community Event"
+                  (ul
+                   (li "Local Clojure communities origanize it")
+                   (li "ClojureBridge (NPO) supports organizers"
+                       (ul
+                        (li "mentoring")
+                        (li "financial support (Bridge Foundry)")
+                        (li "event page")
+                        ))
+                   )
+                  )
+
+           (slide :title "Like RailsBridge"
+                  (ul
+                   (li "Two-day workshop"
+                       (ul
+                        (li "Friday - Installation")
+                        (li "Saturday - Basics and App, After Party")
+                        )))
+                  )
+
+           (slide :title "ClojureBridge Got Original Curriculum"
+                  (h4 :class "gray" "Like RailsBridge (plus bit more)")
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (bullet "A lot of slides for basic stuff"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (bullet "A lot of exercises"))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (bullet "Capstone app which hits API"))
+                   (dt :class "fragment" :data-fragment-index "4"
+                       (bullet "Web app version of capstone app"))
+                   (dt :class "fragment" :data-fragment-index "5"
+                       (bullet "Catalog-ish community-docs"))
+                   (dt :class "fragment" :data-fragment-index "6"
+                       (br)
+                       (h4 :class "maroon" "PERFECT! Durham team was so happy."))
+                   )                  
+                  )
+
+           (slide :title "At Durham Chapter"
+                  (bullet "active, motivated and enjoying coding at first")
+                  (img :src "/clojure-west/img/workshop.png" :style "border:0px")
+                  )
+
+           (slide :title "Again, Think of ..."
+                  (bullet "Your wife if she is not a (Clojure) programmer")
+                  (bullet "Your girlfriend if she is not a ...")
+                  (bullet "Your female co-worker if ...")
+                  (bullet "Your daughter if ...")
+                  (bullet "Your mom if ...")
+                  (br)
+                  (h3 "What if she tries all of those curriculum in a day?")
+                  )
+           
+           (slide :title "How It Went"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (img :src "/clojure-west/img/smiles.png" :style "border:0px"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (img :src "/clojure-west/img/confused.png" :style "border:0px"))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (img :src "/clojure-west/img/tired.png" :style "border:0px"))
+                   )
+                  )
+
+           (slide :title "Sometimes Attendees Expressed"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (h3 :class "bluekoi" "Dropped from the airplane"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (h3 :class "blue" "Tears in my eyes"))
+                   )                  
+                  )
+
+           (slide :title "Turned Out Curriculum Didn't Fit"
+                  (bullet "Not attendees' fault")
+                  (bullet "Not instructors' fault")
+                  (bullet "Not Clojure's fault")
+                  )
+
+           (slide :title "Must Change Curriculum!")
+
+           )
+  )
+
+(defn chapter-quil []
+  (chapter :title "The Road To Perfect Curriculum"
+           (slide :title "At Cognation, August 2014"
+                  (bullet "Anytime")
+                  (bullet "... to instructers")
+                  (bullet "... to TAs")
+                  (canvas :id "hello")
+           )
+           (slide :title "The Road To Perfect Curriculum"
+                  (bullet "Anytime")
+                  (bullet "... to instructers")
+                  (bullet "... to TAs")
+                  (canvas :id "hello")
+           )
+           )
+  )
+
+(html
+  (head)
+  (body
+    (slideshow :theme "serif"
+               (chapter-intro)
+               (chapter-quil)
+               )))

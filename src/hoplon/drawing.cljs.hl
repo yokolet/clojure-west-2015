@@ -1,0 +1,35 @@
+(ns hoplon.drawing
+  (:require [quil.core :as q :include-macros true]))
+
+(defn setup []
+  (q/frame-rate 30)
+  (q/color-mode :rgb)
+  (q/stroke 255 0 0))
+
+(defn mouse-color [x y]
+  "Calculate a color based on two values"
+  [(mod x 255)  (mod y 255) 0])
+
+(defn draw []
+  (apply q/stroke  (mouse-color (q/mouse-x) (q/mouse-y)))
+  (q/line 0 0 (q/mouse-x) (q/mouse-y))
+  (q/line 200 0 (q/mouse-x) (q/mouse-y))
+  (q/line 0 200 (q/mouse-x) (q/mouse-y))
+  (q/line 200 200 (q/mouse-x) (q/mouse-y)))
+
+(q/defsketch hello
+  :host "hello"
+  :title "You can see lines"
+  :size [500 500]
+  :setup setup
+  :draw draw)
+
+#_(defn draw []
+  (q/background 255)
+  (q/fill 0)
+  (q/ellipse 56 46 55 55))
+
+#_(q/defsketch hello
+  :draw draw
+  :host "hello"
+  :size [300 300])

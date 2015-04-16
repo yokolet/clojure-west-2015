@@ -1,0 +1,37 @@
+(ns hoplon.util
+  (:require [quil.core :as q :include-macros true]))
+
+(def workshops
+  [{:index 1 :place "Durham, NC, USA", :date " April 4, 5, 2014"}
+   {:index 2 :place "San Francisco, CA, USA " :date " May 2, 3 2014 and September 26, 27 2014"}
+   {:index 3 :place "Brisbane, Australia  " :date " May 9, 10 2014"}
+   {:index 4 :place "Minneapolis, MN, USA " :date " May 16, 17 2014"}
+   {:index 5 :place "Melbourne, Australia " :date " August 15, 16 2014"}
+   {:index 6 :place "Edinburgh, UK " :date " September 26, 27 2014"}
+   {:index 7 :place "Sydney, Australia " :date " December 19, 20 2014"}
+   {:index 8 :place "Austin, TX, USA " :date " March 13, 14 2015"}
+   {:index 9 :place "London, UK " :date " April 17, 18 2015"}
+   {:index 10 :place "Portland, OR, USA " :date " April 17, 18 2015"}
+   {:index 11 :place "Solingen, Germany " :date " June 12, 13 2015"}])
+
+
+(defelem workshop-entry
+  [attrs {:keys [index place date]}]
+  (dt :class "fragment" :data-fragment-index (str index)
+          (div :class "maroon6" place (span :class "gray6" date))))
+
+(defn workshop-list
+  [list]
+  (let [attrs (into [] (replicate 20 {:class "workshop"}))]
+    (dl (map #(apply workshop-entry %1 %2) attrs list))))
+
+(defn is-text?
+  [children]
+  (and (= (count children) 1)
+       (not (= (.-nodeType (first children)) 1))))
+
+(defn url
+  [href]
+  (a {:href href} href))
+
+(defn add1 [x] (+ 1 x))
