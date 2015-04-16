@@ -137,17 +137,52 @@
 (defn chapter-quil []
   (chapter :title "The Road To Perfect Curriculum"
            (slide :title "At Cognation, August 2014"
-                  (bullet "Anytime")
-                  (bullet "... to instructers")
-                  (bullet "... to TAs")
+                  (h4 "Two Sessions")
+                  (ul
+                   (li "ClojureBridge Hackfest")
+                   (li "ClojureBridge Hacking"))
+                  )
+
+           (slide :title "The Birth of Drawing App"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (div :style "vertical-align:top;"
+                            (img :src "/clojure-west/img/alexm_and_quil.png" :style "border:0px")
+                            "Alex Miller - Quil is good"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (div :style "vertical-align:top;"
+                            (img :src "/clojure-west/img/russ_and_verysimple.png" :style "border:0px")
+                            "Russ Olson - Start from very simple"))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (h3 :class "maroon" "Let's do it!")))
+                  )
+
+           (slide :title "The Very Simple Quil App"
+                  (div :class "code" (highlight :class "clojure"
+                                 ;;{{
+                                 (ns drawing.lines
+                                   (:require [quil.core :as q]))
+                                 (defn setup []
+                                   (q/frame-rate 30)
+                                   (q/color-mode :rgb)
+                                   (q/stroke 255 0 0))
+                                 (defn draw []
+                                   (q/line 0 0 (q/mouse-x) (q/mouse-y))
+                                   (q/line 200 0 (q/mouse-x) (q/mouse-y))
+                                   (q/line 0 200 (q/mouse-x) (q/mouse-y))
+                                   (q/line 200 200 (q/mouse-x) (q/mouse-y)))
+                                 (q/defsketch hello-lines
+                                   :title "You can see lines"
+                                   :size [500 500]
+                                   :setup setup
+                                   :draw draw)
+                                 ;;}}
+                                 ))
+                  )
+
+           (slide :title "The Very Simple Quil App Looks Like.."
                   (canvas :id "hello")
-           )
-           (slide :title "The Road To Perfect Curriculum"
-                  (bullet "Anytime")
-                  (bullet "... to instructers")
-                  (bullet "... to TAs")
-                  (canvas :id "hello")
-           )
+                  )
            )
   )
 

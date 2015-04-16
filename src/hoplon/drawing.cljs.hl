@@ -11,7 +11,7 @@
   [(mod x 255)  (mod y 255) 0])
 
 (defn draw []
-  (apply q/stroke  (mouse-color (q/mouse-x) (q/mouse-y)))
+  #_(apply q/stroke  (mouse-color (q/mouse-x) (q/mouse-y)))
   (q/line 0 0 (q/mouse-x) (q/mouse-y))
   (q/line 200 0 (q/mouse-x) (q/mouse-y))
   (q/line 0 200 (q/mouse-x) (q/mouse-y))
@@ -24,12 +24,3 @@
   :setup setup
   :draw draw)
 
-#_(defn draw []
-  (q/background 255)
-  (q/fill 0)
-  (q/ellipse 56 46 55 55))
-
-#_(q/defsketch hello
-  :draw draw
-  :host "hello"
-  :size [300 300])
