@@ -7,6 +7,7 @@
   :version      "0.1.0-SNAPSHOT"
   :dependencies '[[tailrecursion/boot.task   "2.2.4"]
                   [tailrecursion/hoplon      "5.10.25"]
+                  [tailrecursion/javelin      "3.7.2"]
                   [quil/quil                 "2.2.5"]]
   :out-path     "resources/public"
   :src-paths    #{"src"})

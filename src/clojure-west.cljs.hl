@@ -1,6 +1,7 @@
 (page "clojure-west.html"
   (:require [hoplon.reveal :refer [slideshow chapter slide notes highlight quicklist bullet]]
             [hoplon.util :as u]
+            [hoplon.datamodel :as d]
             [tailrecursion.hoplon.reload :as r]))
 
 (r/reload-all)
@@ -117,9 +118,9 @@
            (slide :title "Sometimes Attendees Expressed"
                   (dl
                    (dt :class "fragment" :data-fragment-index "1"
-                       (h3 :class "bluekoi" "Dropped from the airplane"))
+                       (h3 :class "bluekoi" "\"Dropped from an airplane\""))
                    (dt :class "fragment" :data-fragment-index "2"
-                       (h3 :class "blue" "Tears in my eyes"))
+                       (h3 :class "blue" "\"Tears in my eyes\""))
                    )                  
                   )
 
@@ -180,11 +181,90 @@
                                  ))
                   )
 
-           (slide :title "The Very Simple Quil App Looks Like.."
-                  (canvas :id "hello")
+           (slide :title "The Very Simple Quil App is.."
+                  (canvas :id "drawing")
+                  )
+
+           (slide :title "Got Contribution on Quil App"
+                  (bullet "\"Add mouse-color function to set color of line based on mouse coordinates. Thanks @alandipert\"")
+                  (div :class "code"
+                       (highlight :class "clojure"
+                                  ;;{{
+                                  (defn mouse-color [x y]
+                                    "Calculate a color based on two values"
+                                    [(mod x 255)  (mod y 255) 0])
+
+                                  (defn draw []
+                                    (apply q/stroke  (mouse-color (q/mouse-x) (q/mouse-y)))
+                                    .....
+                                    )
+                                 ;;}}
+                                 ))
+                  )
+
+           (slide :title "The Very Simple Quil App Turns to.."
+                  (canvas :id "colorful")
+                  )
+
+           (slide :title "The Report From San Francisco"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (h4 :class "maroon" "\"Energized by the strikingly different output\""))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (h4 :class "darkorchid" "\"Could modify their programs and compare the results\""))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (h3 :class "maroon" "\"This was fun\""))
+                   )
+                  )
+
+           (slide :title "Yes! Quil App is a Win"
+                  (bullet "It is a game changer!")
+                  (br)
+                  (div
+                   (button :on-click #(reset! d/faces "tired") :class "btn btn-large" "Before")
+                   (button :on-click #(reset! d/faces "fun") :class "btn btn-large" "After")
+                   (br)
+                   (div (img :src d/picture-url :style "border:0px;"))
+                   )
+                  )
+
+           (slide :title "Then, ... Another Problem Came In"
+                  (ul
+                   (li (h4 "Big gap between basic stuff and Quil app"))
+                   (li (h4 "No function learned in the morning session"))
+                   (li (h4 "more, more and MOAR")))
                   )
            )
   )
+
+(defn chapter-activity []
+  (chapter :title "ClojureBrdige Curriculum Team's Efforts"
+           (slide :title "Improving Existing Curriculum"
+                  (ul
+                   (li :class "fragment" :data-fragment-index "1"
+                       (h4 :class "gray" "Incorporate Quil throughout the entire curriculum #115" (br)
+                           (a :target "_blank" :href "https://github.com/ClojureBridge/curriculum/issues/115" "https://github.com/ClojureBridge/curriculum/issues/115")))
+                   (li :class "fragment" :data-fragment-index "2"
+                       (h4 :class "gray" "Remove expectations from curriculum #140" (br)
+                           (a :target "_blank" :href "https://github.com/ClojureBridge/curriculum/issues/140" "https://github.com/ClojureBridge/curriculum/issues/140")
+                           ))
+                   (li :class "fragment" :data-fragment-index "3"
+                       (h4 :class "maroon" "more, more and MOAR" (br)
+                           (a :target "_blank" :href "https://github.com/ClojureBridge/curriculum/issues" "https://github.com/ClojureBridge/curriculum/issues")))
+                   )
+                  )
+
+           (slide :title "Efforts Done So Far"
+                  (img :src "/clojure-west/img/clojurebridge-commits-with-anno.png" :style "border:0px;") (br)
+                  (img :src "/clojure-west/img/drawing-commits-with-anno.png" :style "border:0px;")
+                  )
+
+           (slide :title "Ongoing and Planning Enhancement"
+                  (bullet "aaa")
+                  #_(canvas :id "circle")
+                  )
+           (slide :title "You are the Next ClojureBridge Organizer")
+           ))
 
 (html
   (head)
@@ -192,4 +272,5 @@
     (slideshow :theme "serif"
                (chapter-intro)
                (chapter-quil)
+               (chapter-activity)
                )))

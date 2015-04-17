@@ -87,6 +87,8 @@
              :href "mozilla-theme.css")
        (link :rel "stylesheet"
              :href "custom.css")
+       (link :rel "stylesheet"
+             :href "button.css")
        (div :class "slides" children)))
 
 (def bullet div)

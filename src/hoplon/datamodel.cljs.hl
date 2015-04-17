@@ -1,0 +1,5 @@
+(ns hoplon.datamodel
+  (:require-macros [tailrecursion.javelin :refer [defc defc=]]))
+
+(defc faces "tired")
+(defc= picture-url (str "/clojure-west/img/" faces ".png"))
