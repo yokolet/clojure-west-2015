@@ -43,7 +43,7 @@
            (slide :title "What is ClojureBridge?"
                   (bullet (h4 (a :target "_blank" :href "http://clojurebridge.org/" "http://clojurebridge.org/")))
                   (bullet "Free, beginner-friendly Clojure workshops for women")
-                  (img :src "/clojure-west/img/clojurebridgedotorg.png" :style "border:0px")
+                  (img :src "img/clojurebridgedotorg.png" :style "border:0px")
                   )
 
            (slide :title "ClojureBridge Workshops"
@@ -91,7 +91,7 @@
 
            (slide :title "At Durham Chapter"
                   (bullet "active, motivated and enjoying coding at first")
-                  (img :src "/clojure-west/img/workshop.png" :style "border:0px")
+                  (img :src "img/workshop.png" :style "border:0px")
                   )
 
            (slide :title "Again, Think of ..."
@@ -107,11 +107,11 @@
            (slide :title "How It Went"
                   (dl
                    (dt :class "fragment" :data-fragment-index "1"
-                       (img :src "/clojure-west/img/smiles.png" :style "border:0px"))
+                       (img :src "img/smiles.png" :style "border:0px"))
                    (dt :class "fragment" :data-fragment-index "2"
-                       (img :src "/clojure-west/img/confused.png" :style "border:0px"))
+                       (img :src "img/confused.png" :style "border:0px"))
                    (dt :class "fragment" :data-fragment-index "3"
-                       (img :src "/clojure-west/img/tired.png" :style "border:0px"))
+                       (img :src "img/tired.png" :style "border:0px"))
                    )
                   )
 
@@ -148,11 +148,11 @@
                   (dl
                    (dt :class "fragment" :data-fragment-index "1"
                        (div :style "vertical-align:top;"
-                            (img :src "/clojure-west/img/alexm_and_quil.png" :style "border:0px")
+                            (img :src "img/alexm_and_quil.png" :style "border:0px")
                             "Alex Miller - Quil is good"))
                    (dt :class "fragment" :data-fragment-index "2"
                        (div :style "vertical-align:top;"
-                            (img :src "/clojure-west/img/russ_and_verysimple.png" :style "border:0px")
+                            (img :src "img/russ_and_verysimple.png" :style "border:0px")
                             "Russ Olson - Start from very simple"))
                    (dt :class "fragment" :data-fragment-index "3"
                        (h3 :class "maroon" "Let's do it!")))
@@ -255,13 +255,11 @@
                   )
 
            (slide :title "Efforts Done So Far"
-                  (img :src "/clojure-west/img/clojurebridge-commits-with-anno.png" :style "border:0px;") (br)
-                  (img :src "/clojure-west/img/drawing-commits-with-anno.png" :style "border:0px;")
+                  (img :src "img/clojurebridge-commits-with-anno.png" :style "border:0px;") (br)
+                  (img :src "img/drawing-commits-with-anno.png" :style "border:0px;")
                   )
 
            (slide :title "Ongoing and Planning Enhancement"
-                  (bullet "aaa")
-                  #_(canvas :id "circle")
                   )
            (slide :title "You are the Next ClojureBridge Organizer")
            ))
