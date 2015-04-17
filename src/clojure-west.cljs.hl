@@ -1,0 +1,274 @@
+(page "clojure-west.html"
+  (:require [hoplon.reveal :refer [slideshow chapter slide notes highlight quicklist bullet]]
+            [hoplon.util :as u]
+            [hoplon.datamodel :as d]
+            [tailrecursion.hoplon.reload :as r]))
+
+(r/reload-all)
+
+(defn chapter-intro []
+  (chapter :title ""
+           (slide :title (h2 "The Joys and Pains to Write a Clojure Curriculum for Beginners")
+                  (br)
+                  (br)
+                  (bullet (h3 :class "purple" "Yoko Harada"))
+                  (bullet (h3 :class "purple" "@yokolet"))
+                  (bullet (h3 :class "ashgray" "Clojure/West 2015")))
+
+           (slide :title "Who is Yoko?"
+                  (br)
+                  (ul
+                   (li :class "fragment" :data-fragment-index "1"
+                       (h3 "Developer at Cognitect, Inc.")
+                       (bullet (h3 (a :target "_blank" :href "http://cognitect.com/" "http://cognitect.com/"))))
+                   (li :class "fragment" :data-fragment-index "2"
+                       (h3 "The First ClojureBridge TA"))
+                   (li :class "fragment" :data-fragment-index "3"
+                       (h3 "ClojureBridge Board Member"))
+                   (li :class "fragment" :data-fragment-index "4"
+                       (h3 "RailsGirls origanizer/RailsBridge TA"))
+                   (li :class "fragment" :data-fragment-index "5"
+                       (h3 :class "purple" "@yokolet"))))
+
+           (slide :title "Think of ..."
+                  (bullet "Your wife if she is not a (Clojure) programmer")
+                  (bullet "Your girlfriend if she is not a ...")
+                  (bullet "Your female co-worker if ...")
+                  (bullet "Your daughter if ...")
+                  (bullet "Your mom if ...")
+                  (br)
+                  (h3 "What if she tries Clojure?")
+                  )
+
+           (slide :title "What is ClojureBridge?"
+                  (bullet (h4 (a :target "_blank" :href "http://clojurebridge.org/" "http://clojurebridge.org/")))
+                  (bullet "Free, beginner-friendly Clojure workshops for women")
+                  (img :src "img/clojurebridgedotorg.png" :style "border:0px")
+                  )
+
+           (slide :title "ClojureBridge Workshops"
+                  (u/workshop-list u/workshops))
+
+           (slide :title "Local Community Event"
+                  (ul
+                   (li "Local Clojure communities origanize it")
+                   (li "ClojureBridge (NPO) supports organizers"
+                       (ul
+                        (li "mentoring")
+                        (li "financial support (Bridge Foundry)")
+                        (li "event page")
+                        ))
+                   )
+                  )
+
+           (slide :title "Like RailsBridge"
+                  (ul
+                   (li "Two-day workshop"
+                       (ul
+                        (li "Friday - Installation")
+                        (li "Saturday - Basics and App, After Party")
+                        )))
+                  )
+
+           (slide :title "ClojureBridge Got Original Curriculum"
+                  (h4 :class "gray" "Like RailsBridge (plus bit more)")
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (bullet "A lot of slides for basic stuff"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (bullet "A lot of exercises"))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (bullet "Capstone app which hits API"))
+                   (dt :class "fragment" :data-fragment-index "4"
+                       (bullet "Web app version of capstone app"))
+                   (dt :class "fragment" :data-fragment-index "5"
+                       (bullet "Catalog-ish community-docs"))
+                   (dt :class "fragment" :data-fragment-index "6"
+                       (br)
+                       (h4 :class "maroon" "PERFECT! Durham team was so happy."))
+                   )                  
+                  )
+
+           (slide :title "At Durham Chapter"
+                  (bullet "active, motivated and enjoying coding at first")
+                  (img :src "img/workshop.png" :style "border:0px")
+                  )
+
+           (slide :title "Again, Think of ..."
+                  (bullet "Your wife if she is not a (Clojure) programmer")
+                  (bullet "Your girlfriend if she is not a ...")
+                  (bullet "Your female co-worker if ...")
+                  (bullet "Your daughter if ...")
+                  (bullet "Your mom if ...")
+                  (br)
+                  (h3 "What if she tries all of those curriculum in a day?")
+                  )
+           
+           (slide :title "How It Went"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (img :src "img/smiles.png" :style "border:0px"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (img :src "img/confused.png" :style "border:0px"))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (img :src "img/tired.png" :style "border:0px"))
+                   )
+                  )
+
+           (slide :title "Sometimes Attendees Expressed"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (h3 :class "bluekoi" "\"Dropped from an airplane\""))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (h3 :class "blue" "\"Tears in my eyes\""))
+                   )                  
+                  )
+
+           (slide :title "Turned Out Curriculum Didn't Fit"
+                  (bullet "Not attendees' fault")
+                  (bullet "Not instructors' fault")
+                  (bullet "Not Clojure's fault")
+                  )
+
+           (slide :title "Must Change Curriculum!")
+
+           )
+  )
+
+(defn chapter-quil []
+  (chapter :title "The Road To Perfect Curriculum"
+           (slide :title "At Cognation, August 2014"
+                  (h4 "Two Sessions")
+                  (ul
+                   (li "ClojureBridge Hackfest")
+                   (li "ClojureBridge Hacking"))
+                  )
+
+           (slide :title "The Birth of Drawing App"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (div :style "vertical-align:top;"
+                            (img :src "img/alexm_and_quil.png" :style "border:0px")
+                            "Alex Miller - Quil is good"))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (div :style "vertical-align:top;"
+                            (img :src "img/russ_and_verysimple.png" :style "border:0px")
+                            "Russ Olson - Start from very simple"))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (h3 :class "maroon" "Let's do it!")))
+                  )
+
+           (slide :title "The Very Simple Quil App"
+                  (div :class "code" (highlight :class "clojure"
+                                 ;;{{
+                                 (ns drawing.lines
+                                   (:require [quil.core :as q]))
+                                 (defn setup []
+                                   (q/frame-rate 30)
+                                   (q/color-mode :rgb)
+                                   (q/stroke 255 0 0))
+                                 (defn draw []
+                                   (q/line 0 0 (q/mouse-x) (q/mouse-y))
+                                   (q/line 200 0 (q/mouse-x) (q/mouse-y))
+                                   (q/line 0 200 (q/mouse-x) (q/mouse-y))
+                                   (q/line 200 200 (q/mouse-x) (q/mouse-y)))
+                                 (q/defsketch hello-lines
+                                   :title "You can see lines"
+                                   :size [500 500]
+                                   :setup setup
+                                   :draw draw)
+                                 ;;}}
+                                 ))
+                  )
+
+           (slide :title "The Very Simple Quil App is.."
+                  (canvas :id "drawing")
+                  )
+
+           (slide :title "Got Contribution on Quil App"
+                  (bullet "\"Add mouse-color function to set color of line based on mouse coordinates. Thanks @alandipert\"")
+                  (div :class "code"
+                       (highlight :class "clojure"
+                                  ;;{{
+                                  (defn mouse-color [x y]
+                                    "Calculate a color based on two values"
+                                    [(mod x 255)  (mod y 255) 0])
+
+                                  (defn draw []
+                                    (apply q/stroke  (mouse-color (q/mouse-x) (q/mouse-y)))
+                                    .....
+                                    )
+                                 ;;}}
+                                 ))
+                  )
+
+           (slide :title "The Very Simple Quil App Turns to.."
+                  (canvas :id "colorful")
+                  )
+
+           (slide :title "The Report From San Francisco"
+                  (dl
+                   (dt :class "fragment" :data-fragment-index "1"
+                       (h4 :class "maroon" "\"Energized by the strikingly different output\""))
+                   (dt :class "fragment" :data-fragment-index "2"
+                       (h4 :class "darkorchid" "\"Could modify their programs and compare the results\""))
+                   (dt :class "fragment" :data-fragment-index "3"
+                       (h3 :class "maroon" "\"This was fun\""))
+                   )
+                  )
+
+           (slide :title "Yes! Quil App is a Win"
+                  (bullet "It is a game changer!")
+                  (br)
+                  (div
+                   (button :on-click #(reset! d/faces "tired") :class "btn btn-large" "Before")
+                   (button :on-click #(reset! d/faces "fun") :class "btn btn-large" "After")
+                   (br)
+                   (div (img :src d/picture-url :style "border:0px;"))
+                   )
+                  )
+
+           (slide :title "Then, ... Another Problem Came In"
+                  (ul
+                   (li (h4 "Big gap between basic stuff and Quil app"))
+                   (li (h4 "No function learned in the morning session"))
+                   (li (h4 "more, more and MOAR")))
+                  )
+           )
+  )
+
+(defn chapter-activity []
+  (chapter :title "ClojureBrdige Curriculum Team's Efforts"
+           (slide :title "Improving Existing Curriculum"
+                  (ul
+                   (li :class "fragment" :data-fragment-index "1"
+                       (h4 :class "gray" "Incorporate Quil throughout the entire curriculum #115" (br)
+                           (a :target "_blank" :href "https://github.com/ClojureBridge/curriculum/issues/115" "https://github.com/ClojureBridge/curriculum/issues/115")))
+                   (li :class "fragment" :data-fragment-index "2"
+                       (h4 :class "gray" "Remove expectations from curriculum #140" (br)
+                           (a :target "_blank" :href "https://github.com/ClojureBridge/curriculum/issues/140" "https://github.com/ClojureBridge/curriculum/issues/140")
+                           ))
+                   (li :class "fragment" :data-fragment-index "3"
+                       (h4 :class "maroon" "more, more and MOAR" (br)
+                           (a :target "_blank" :href "https://github.com/ClojureBridge/curriculum/issues" "https://github.com/ClojureBridge/curriculum/issues")))
+                   )
+                  )
+
+           (slide :title "Efforts Done So Far"
+                  (img :src "img/clojurebridge-commits-with-anno.png" :style "border:0px;") (br)
+                  (img :src "img/drawing-commits-with-anno.png" :style "border:0px;")
+                  )
+
+           (slide :title "Ongoing and Planning Enhancement"
+                  )
+           (slide :title "You are the Next ClojureBridge Organizer")
+           ))
+
+(html
+  (head)
+  (body
+    (slideshow :theme "serif"
+               (chapter-intro)
+               (chapter-quil)
+               (chapter-activity)
+               )))
