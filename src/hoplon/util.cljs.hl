@@ -12,7 +12,19 @@
    {:index 8 :place "Austin, TX, USA " :date " March 13, 14 2015"}
    {:index 9 :place "London, UK " :date " April 17, 18 2015"}
    {:index 10 :place "Portland, OR, USA " :date " April 17, 18 2015"}
-   {:index 11 :place "Solingen, Germany " :date " June 12, 13 2015"}])
+   {:index 11 :place "Solingen, Germany " :date " June 12, 13 2015"}
+   {:index 12 :place "Berlin, Germany " :date " July 10, 11 2015"}])
+
+(def planned-workshops
+  ["Detroit, MI USA"
+   "New York, NY, USA"
+   "Chicago, IL, USA",
+   "Washington, DC, USA"
+   "Denver, CO, USA"
+   "Tronto, Canada"
+   "Porto Alegre, Brazil"
+   "Helsinki, Finland"
+   "Bristol, UK"])
 
 
 (defelem workshop-entry
