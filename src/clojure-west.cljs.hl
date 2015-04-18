@@ -30,29 +30,22 @@
                    (li :class "fragment" :data-fragment-index "5"
                        (h3 :class "purple" "@yokolet"))))
 
-           (slide :title "Think of ..."
-                  (bullet "Your wife if she is not a (Clojure) programmer")
-                  (bullet "Your girlfriend if she is not a ...")
-                  (bullet "Your female co-worker if ...")
-                  (bullet "Your daughter if ...")
-                  (bullet "Your mom if ...")
-                  (br)
-                  (h3 "What if she tries Clojure?")
+           (slide :title "Look around..."
+                  (h4 :class "slateblue" "How many percent of attendees are female?")
                   )
 
-           (slide :title "What is ClojureBridge?"
+           (slide :title "That's Why ClojureBridge"
                   (bullet (h4 (a :target "_blank" :href "http://clojurebridge.org/" "http://clojurebridge.org/")))
                   (bullet "Free, beginner-friendly Clojure workshops for women")
                   (bullet "To make this Clojure community diverse")
                   (img :src "img/clojurebridgedotorg.png" :style "border:0px")
                   )
 
-           (slide :title "ClojureBridge Workshops"
+           (slide :title "Past ClojureBridge Workshops"
                   (u/workshop-list u/workshops))
 
-           (slide :title "ClojureBridge Workshops Planning Now"
-                  (dl
-                   (map #(dt (div :class "maroon6" %)) u/planned-workshops)))
+           (slide :title "Future ClojureBridge Workshops"
+                  (u/workshop-list u/planned-workshops))
 
            (slide :title "Local Community Event"
                   (ul
@@ -75,7 +68,7 @@
                         )))
                   )
 
-           (slide :title "ClojureBridge Got Original Curriculum"
+           (slide :title "ClojureBridge Original Curriculum"
                   (h4 :class "gray" "Like RailsBridge (plus bit more)")
                   (dl
                    (dt :class "fragment" :data-fragment-index "1"
@@ -99,14 +92,12 @@
                   (img :src "img/workshop.png" :style "border:0px")
                   )
 
-           (slide :title "Again, Think of ..."
-                  (bullet "Your wife if she is not a (Clojure) programmer")
-                  (bullet "Your girlfriend if she is not a ...")
-                  (bullet "Your female co-worker if ...")
-                  (bullet "Your daughter if ...")
-                  (bullet "Your mom if ...")
+           (slide :title "Unfortunately..."
+                  (bullet "She was not a programmer")
+                  (bullet "She was at least not a Clojure programmer")
+                  (bullet "Her experiences were mostly HTML or CSS")
                   (br)
-                  (h3 "What if she tries all of those curriculum in a day?")
+                  (h4 :class "slateblue" "What if she had to learn all of those curriculum in a day?")
                   )
            
            (slide :title "How It Went"
@@ -287,7 +278,7 @@
 (defn chapter-conclusion []
   (chapter :title "Conclusion"
            (slide :title "Make This Clojure Community Diverse!")
-           (slide :title "Must Improve Curriculum"
+           (slide :title "On the Way to Improve Curriculum"
                   (h4 :class "gray" "So that everyone from different background can enjoy")
                   (h4 :class "gray" "So that attendees can keep studying"))
            (slide :title "Help ClojureBridge"
@@ -304,6 +295,8 @@
                    (li (a :target "_blank" :href "http://groups.google.com/forum/#!forum/clojurebridge-workshops" "http://groups.google.com/forum/#!forum/clojurebridge-workshops")))
                   )
            (slide :title "You are the Next ClojureBridge Organizer!")
+           (slide :title (h4 "Many Thanks to ClojureBridge Sponsors")
+                  )
            (slide :title "Thank You!")
            )
   )

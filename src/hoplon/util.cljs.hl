@@ -5,26 +5,24 @@
   [{:index 1 :place "Durham, NC, USA", :date " April 4, 5, 2014"}
    {:index 2 :place "San Francisco, CA, USA " :date " May 2, 3 2014 and September 26, 27 2014"}
    {:index 3 :place "Brisbane, Australia  " :date " May 9, 10 2014"}
-   {:index 4 :place "Minneapolis, MN, USA " :date " May 16, 17 2014"}
+   {:index 4 :place "Minneapolis, MN, USA " :date " May 16, 17 2014 and March 6, 7 2015"}
    {:index 5 :place "Melbourne, Australia " :date " August 15, 16 2014"}
-   {:index 6 :place "Edinburgh, UK " :date " September 26, 27 2014"}
+   {:index 6 :place "Edinburgh, Scotland " :date " September 26, 27 2014"}
    {:index 7 :place "Sydney, Australia " :date " December 19, 20 2014"}
    {:index 8 :place "Austin, TX, USA " :date " March 13, 14 2015"}
-   {:index 9 :place "London, UK " :date " April 17, 18 2015"}
+   {:index 9 :place "London, England " :date " April 17, 18 2015"}
    {:index 10 :place "Portland, OR, USA " :date " April 17, 18 2015"}
-   {:index 11 :place "Solingen, Germany " :date " June 12, 13 2015"}
-   {:index 12 :place "Berlin, Germany " :date " July 10, 11 2015"}])
+   ])
 
 (def planned-workshops
-  ["Detroit, MI USA"
-   "New York, NY, USA"
-   "Chicago, IL, USA",
-   "Washington, DC, USA"
-   "Denver, CO, USA"
-   "Tronto, Canada"
-   "Porto Alegre, Brazil"
-   "Helsinki, Finland"
-   "Bristol, UK"])
+  [
+   {:index 1 :place "Solingen, Germany " :date " June 12, 13 2015"}
+   {:index 2 :place "Berlin, Germany " :date " July 10, 11 2015"}
+   {:index 3 :place "Detroit, MI USA" :date ""}
+   {:index 4 :place "New York, NY, USA" :date ""}
+   {:index 5 :place "Denver, CO, USA" :date ""}
+   {:index 6 :place "Finland" :date ""}
+   ])
 
 
 (defelem workshop-entry
