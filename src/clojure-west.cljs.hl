@@ -97,7 +97,7 @@
                   (bullet "She was at least not a Clojure programmer")
                   (bullet "Her experiences were mostly HTML or CSS")
                   (br)
-                  (h4 :class "slateblue" "What if she had to learn all of those curriculum in a day?")
+                  (h4 :class "slateblue" "What if she had to learn the entire curriculum in a day?")
                   )
            
            (slide :title "How It Went"
@@ -125,7 +125,7 @@
                   (bullet "Not instructors' fault")
                   (bullet "Not Clojure's fault")
                   (br)
-                  (h4 :class "gray" "The team was unexperienced...")
+                  (h4 :class "gray" "The team was inexperienced...")
                   )
 
            (slide :title "Must Change Curriculum!")
@@ -134,7 +134,7 @@
   )
 
 (defn chapter-quil []
-  (chapter :title "The Road To Perfect Curriculum"
+  (chapter :title "The Road to a Perfect Curriculum"
            (slide :title "At Cognation, August 2014"
                   (h4 "Two Sessions")
                   (ul
@@ -145,7 +145,7 @@
                   (h4 :class "maroon" "\"Making this Clojure community diverse is our mission!\"")
                   )
 
-           (slide :title "The Birth of Drawing App"
+           (slide :title "The Birth of a Drawing App"
                   (dl
                    (dt :class "fragment" :data-fragment-index "1"
                        (div :style "vertical-align:top;"
@@ -186,7 +186,7 @@
                   (canvas :id "drawing")
                   )
 
-           (slide :title "Got Contribution on Quil App"
+           (slide :title "Got a Contribution to the Quil App"
                   (bullet "\"Add mouse-color function to set color of line based on mouse coordinates. Thanks @alandipert\"")
                   (div :class "code"
                        (highlight :class "clojure"
@@ -203,7 +203,7 @@
                                  ))
                   )
 
-           (slide :title "The Very Simple Quil App Turns to.."
+           (slide :title "The Very Simple Quil App Turns Into..."
                   (canvas :id "colorful")
                   )
 
@@ -229,7 +229,7 @@
                    )
                   )
 
-           (slide :title "Then, ... Another Problem Came In"
+           (slide :title "Then... Another Problem"
                   (ul
                    (li "Big gap between basic stuff and Quil app")
                    (li "No function learned in the morning session")
@@ -239,7 +239,7 @@
   )
 
 (defn chapter-activity []
-  (chapter :title "ClojureBrdige Curriculum Team's Efforts"
+  (chapter :title "ClojureBridge Curriculum Team's Efforts"
            (slide :title "Improving Existing Curriculum"
                   (h4 :class "gray" "for example...")
                   (ul
@@ -271,14 +271,14 @@
                        (br))
                    (li :class "fragment" :data-fragment-index "2"
                        (h4 :class "gray" "After workshop support material")
-                       (bullet "Just one day workshop is not enough")))
+                       (bullet "Just a one-day workshop is not enough")))
                   )
            ))
 
 (defn chapter-conclusion []
   (chapter :title "Conclusion"
            (slide :title "Make This Clojure Community Diverse!")
-           (slide :title "On the Way to Improve Curriculum"
+           (slide :title "On the Way to Improving the Curriculum"
                   (h4 :class "gray" "So that everyone from different background can enjoy")
                   (h4 :class "gray" "So that attendees can keep studying"))
            (slide :title "Help ClojureBridge"
