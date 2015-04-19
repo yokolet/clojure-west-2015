@@ -31,7 +31,7 @@
                        (h3 :class "purple" "@yokolet"))))
 
            (slide :title "Look around..."
-                  (h4 :class "slateblue" "How many percent of attendees are female?")
+                  (h3 :class "darkslateblue" "How many percent of attendees are female?")
                   )
 
            (slide :title "That's Why ClojureBridge"
