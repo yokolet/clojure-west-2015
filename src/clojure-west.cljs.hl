@@ -296,6 +296,7 @@
                   )
            (slide :title "You are the Next ClojureBridge Organizer!")
            (slide :title (h4 "Many Thanks to ClojureBridge Sponsors")
+                  (img :src "img/sponsor-list.png" :style "border:0px")
                   )
            (slide :title "Thank You!")
            )
