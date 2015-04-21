@@ -283,10 +283,8 @@
 (defn chapter-conclusion []
   (chapter :title "Conclusion"
            (slide :title "Make This Clojure Community Diverse!")
-           (slide :title "On the Way to Improving the Curriculum"
-                  (h4 :class "gray" "So that everyone from different background can enjoy")
-                  (h4 :class "gray" "So that attendees can keep studying"))
-           (slide :title "Help ClojureBridge"
+
+           (slide :title "Help ClojureBridge Curriculum"
                   (h4 :class "gray" "Go to...")
                   (ul
                    (li (a :target "_blank" :href "http://github.com/ClojureBridge/curriculum/" "http://github.com/ClojureBridge/curriculum/"))
