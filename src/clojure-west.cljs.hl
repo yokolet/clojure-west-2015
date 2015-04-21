@@ -22,11 +22,11 @@
                        (h3 "Developer at Cognitect, Inc.")
                        (bullet (h3 (a :target "_blank" :href "http://cognitect.com/" "http://cognitect.com/"))))
                    (li :class "fragment" :data-fragment-index "2"
-                       (h3 "The First ClojureBridge TA"))
-                   (li :class "fragment" :data-fragment-index "3"
-                       (h3 "ClojureBridge Board Member"))
-                   (li :class "fragment" :data-fragment-index "4"
                        (h3 "RailsGirls origanizer/RailsBridge TA"))
+                   (li :class "fragment" :data-fragment-index "3"
+                       (h3 "The First ClojureBridge Workshop TA"))
+                   (li :class "fragment" :data-fragment-index "4"
+                       (h3 "ClojureBridge Board Member"))
                    (li :class "fragment" :data-fragment-index "5"
                        (h3 :class "purple" "@yokolet"))))
 
@@ -39,6 +39,11 @@
                   (bullet "Free, beginner-friendly Clojure workshops for women")
                   (bullet "To make this Clojure community diverse")
                   (img :src "img/clojurebridgedotorg.png" :style "border:0px")
+                  )
+
+           (slide :title "Founded by"
+                  (bullet "Bridget Hillyer, @BridgetHillyer") (br)
+                  (img :src "img/bridget.jpg" :style "border:0px; height:200px;")
                   )
 
            (slide :title "Past ClojureBridge Workshops"
@@ -111,7 +116,7 @@
                    )
                   )
 
-           (slide :title "Sometimes Attendees Expressed"
+           (slide :title "Attendees Expressed"
                   (dl
                    (dt :class "fragment" :data-fragment-index "1"
                        (h3 :class "bluekoi" "\"Dropped from an airplane\""))
