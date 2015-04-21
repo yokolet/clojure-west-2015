@@ -49046,19 +49046,22 @@ hoplon.util.workshops = new cljs.core.PersistentVector(null, 10, 5, cljs.core.Pe
 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 6, new cljs.core.Keyword(null, "place", "place", 1120652409), "Edinburgh, Scotland ", new cljs.core.Keyword(null, "date", "date", 1016980256), " September 26, 27 2014"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 7, new cljs.core.Keyword(null, "place", "place", 1120652409), "Sydney, Australia ", new cljs.core.Keyword(null, "date", "date", 1016980256), " December 19, 20 2014"], 
 null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 8, new cljs.core.Keyword(null, "place", "place", 1120652409), "Austin, TX, USA ", new cljs.core.Keyword(null, "date", "date", 1016980256), " March 13, 14 2015"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 9, new cljs.core.Keyword(null, "place", "place", 1120652409), "London, England ", new cljs.core.Keyword(null, "date", "date", 
 1016980256), " April 17, 18 2015"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 10, new cljs.core.Keyword(null, "place", "place", 1120652409), "Portland, OR, USA ", new cljs.core.Keyword(null, "date", "date", 1016980256), " April 17, 18 2015"], null)], null);
-hoplon.util.planned_workshops = new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 1, new cljs.core.Keyword(null, "place", "place", 1120652409), "Solingen, Germany ", new cljs.core.Keyword(null, "date", "date", 1016980256), " June 12, 13 2015"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 2, new cljs.core.Keyword(null, 
-"place", "place", 1120652409), "Berlin, Germany ", new cljs.core.Keyword(null, "date", "date", 1016980256), " July 10, 11 2015"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 1120652409), "Detroit, MI USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 4, new cljs.core.Keyword(null, 
-"place", "place", 1120652409), "New York, NY, USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 5, new cljs.core.Keyword(null, "place", "place", 1120652409), "Denver, CO, USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 6, new cljs.core.Keyword(null, 
-"place", "place", 1120652409), "Finland", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null)], null);
+hoplon.util.planned_workshops = new cljs.core.PersistentVector(null, 12, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 1, new cljs.core.Keyword(null, "place", "place", 1120652409), "Solingen, Germany ", new cljs.core.Keyword(null, "date", "date", 1016980256), " June 12, 13 2015"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 2, new cljs.core.Keyword(null, 
+"place", "place", 1120652409), "Berlin, Germany ", new cljs.core.Keyword(null, "date", "date", 1016980256), " July 10, 11 2015"], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 1120652409), "Detroit, MI USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, 
+"place", "place", 1120652409), "New York, NY, USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 1120652409), "Denver, CO, USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, 
+"place", "place", 1120652409), "Finland", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 1120652409), "Sweden", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 
+1120652409), "Chicago, IL, USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 1120652409), "Tronto, Canada", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 
+1120652409), "Washington, DC, USA", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", "place", 1120652409), "Porto Alegre, Brazil", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null), new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "index", "index", 1114250308), 3, new cljs.core.Keyword(null, "place", 
+"place", 1120652409), "Bristol, UK", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null)], null);
 hoplon.util.workshop_entry = function() {
   var workshop_entry__delegate = function(args__10163__auto__) {
-    var vec__11152 = tailrecursion.hoplon.parse_args.call(null, args__10163__auto__);
-    var attrs = cljs.core.nth.call(null, vec__11152, 0, null);
-    var map__11153 = cljs.core.nth.call(null, vec__11152, 1, null);
-    var map__11153__$1 = cljs.core.seq_QMARK_.call(null, map__11153) ? cljs.core.apply.call(null, cljs.core.hash_map, map__11153) : map__11153;
-    var date = cljs.core.get.call(null, map__11153__$1, new cljs.core.Keyword(null, "date", "date", 1016980256));
-    var place = cljs.core.get.call(null, map__11153__$1, new cljs.core.Keyword(null, "place", "place", 1120652409));
-    var index = cljs.core.get.call(null, map__11153__$1, new cljs.core.Keyword(null, "index", "index", 1114250308));
+    var vec__24779 = tailrecursion.hoplon.parse_args.call(null, args__10163__auto__);
+    var attrs = cljs.core.nth.call(null, vec__24779, 0, null);
+    var map__24780 = cljs.core.nth.call(null, vec__24779, 1, null);
+    var map__24780__$1 = cljs.core.seq_QMARK_.call(null, map__24780) ? cljs.core.apply.call(null, cljs.core.hash_map, map__24780) : map__24780;
+    var date = cljs.core.get.call(null, map__24780__$1, new cljs.core.Keyword(null, "date", "date", 1016980256));
+    var place = cljs.core.get.call(null, map__24780__$1, new cljs.core.Keyword(null, "place", "place", 1120652409));
+    var index = cljs.core.get.call(null, map__24780__$1, new cljs.core.Keyword(null, "index", "index", 1114250308));
     return tailrecursion.hoplon.dt.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "fragment", new cljs.core.Keyword(null, "data-fragment-index", "data-fragment-index", 1446791946), "" + cljs.core.str.cljs$core$IFn$_invoke$arity$1(index), tailrecursion.hoplon.div.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "maroon6", place, tailrecursion.hoplon.span.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "gray6", date)));
   };
   var workshop_entry = function(var_args) {
@@ -49069,8 +49072,8 @@ hoplon.util.workshop_entry = function() {
     return workshop_entry__delegate.call(this, args__10163__auto__);
   };
   workshop_entry.cljs$lang$maxFixedArity = 0;
-  workshop_entry.cljs$lang$applyTo = function(arglist__11154) {
-    var args__10163__auto__ = cljs.core.seq(arglist__11154);
+  workshop_entry.cljs$lang$applyTo = function(arglist__24781) {
+    var args__10163__auto__ = cljs.core.seq(arglist__24781);
     return workshop_entry__delegate(args__10163__auto__);
   };
   workshop_entry.cljs$core$IFn$_invoke$arity$variadic = workshop_entry__delegate;
@@ -49079,8 +49082,8 @@ hoplon.util.workshop_entry = function() {
 hoplon.util.workshop_list = function workshop_list(list) {
   var attrs = cljs.core.into.call(null, cljs.core.PersistentVector.EMPTY, cljs.core.replicate.call(null, 20, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", 1108647146), "workshop"], null)));
   return tailrecursion.hoplon.dl.call(null, cljs.core.map.call(null, function(attrs) {
-    return function(p1__11155_SHARP_, p2__11156_SHARP_) {
-      return cljs.core.apply.call(null, hoplon.util.workshop_entry, p1__11155_SHARP_, p2__11156_SHARP_);
+    return function(p1__24782_SHARP_, p2__24783_SHARP_) {
+      return cljs.core.apply.call(null, hoplon.util.workshop_entry, p1__24782_SHARP_, p2__24783_SHARP_);
     };
   }(attrs), attrs, list));
 };
@@ -49798,12 +49801,12 @@ tailrecursion.hoplon.app_pages._clojure_west_DOT_html.hoploninit = function hopl
     var meta = tailrecursion.hoplon.html_meta;
     return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [tailrecursion.hoplon.link.call(null, new cljs.core.Keyword(null, "rel", "rel", 1014017035), "stylesheet", new cljs.core.Keyword(null, "type", "type", 1017479852), "text/css", new cljs.core.Keyword(null, "href", "href", 1017115293), window["_hoplon_main_css"])], null);
   }()), tailrecursion.hoplon.html_body.call(null, cljs.core.PersistentArrayMap.EMPTY, function() {
-    var G__17312 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_intro.call(null);
-    var G__17313 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_quil.call(null);
-    var G__17314 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_activity.call(null);
-    var G__17315 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_conclusion.call(null);
-    var G__17311 = hoplon.reveal.slideshow.call(null, new cljs.core.Keyword(null, "theme", "theme", 1124231483), "serif", G__17312, G__17313, G__17314, G__17315);
-    return G__17311;
+    var G__11219 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_intro.call(null);
+    var G__11220 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_quil.call(null);
+    var G__11221 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_activity.call(null);
+    var G__11222 = tailrecursion.hoplon.app_pages._clojure_west_DOT_html.chapter_conclusion.call(null);
+    var G__11218 = hoplon.reveal.slideshow.call(null, new cljs.core.Keyword(null, "theme", "theme", 1124231483), "serif", G__11219, G__11220, G__11221, G__11222);
+    return G__11218;
   }()));
   return tailrecursion.hoplon.init.call(null);
 };
