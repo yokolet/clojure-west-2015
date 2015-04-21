@@ -19,9 +19,15 @@
    {:index 1 :place "Solingen, Germany " :date " June 12, 13 2015"}
    {:index 2 :place "Berlin, Germany " :date " July 10, 11 2015"}
    {:index 3 :place "Detroit, MI USA" :date ""}
-   {:index 4 :place "New York, NY, USA" :date ""}
-   {:index 5 :place "Denver, CO, USA" :date ""}
-   {:index 6 :place "Finland" :date ""}
+   {:index 3 :place "New York, NY, USA" :date ""}
+   {:index 3 :place "Denver, CO, USA" :date ""}
+   {:index 3 :place "Finland" :date ""}
+   {:index 3 :place "Sweden" :date ""}
+   {:index 3 :place "Chicago, IL, USA" :date ""}
+   {:index 3 :place "Tronto, Canada" :date ""}
+   {:index 3 :place "Washington, DC, USA" :date ""}
+   {:index 3 :place "Porto Alegre, Brazil" :date ""}
+   {:index 3 :place "Bristol, UK" :date ""}
    ])
 
 
