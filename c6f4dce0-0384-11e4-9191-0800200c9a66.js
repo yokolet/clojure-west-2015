@@ -49055,13 +49055,13 @@ hoplon.util.planned_workshops = new cljs.core.PersistentVector(null, 12, 5, cljs
 "place", 1120652409), "Bristol, UK", new cljs.core.Keyword(null, "date", "date", 1016980256), ""], null)], null);
 hoplon.util.workshop_entry = function() {
   var workshop_entry__delegate = function(args__10163__auto__) {
-    var vec__24779 = tailrecursion.hoplon.parse_args.call(null, args__10163__auto__);
-    var attrs = cljs.core.nth.call(null, vec__24779, 0, null);
-    var map__24780 = cljs.core.nth.call(null, vec__24779, 1, null);
-    var map__24780__$1 = cljs.core.seq_QMARK_.call(null, map__24780) ? cljs.core.apply.call(null, cljs.core.hash_map, map__24780) : map__24780;
-    var date = cljs.core.get.call(null, map__24780__$1, new cljs.core.Keyword(null, "date", "date", 1016980256));
-    var place = cljs.core.get.call(null, map__24780__$1, new cljs.core.Keyword(null, "place", "place", 1120652409));
-    var index = cljs.core.get.call(null, map__24780__$1, new cljs.core.Keyword(null, "index", "index", 1114250308));
+    var vec__11152 = tailrecursion.hoplon.parse_args.call(null, args__10163__auto__);
+    var attrs = cljs.core.nth.call(null, vec__11152, 0, null);
+    var map__11153 = cljs.core.nth.call(null, vec__11152, 1, null);
+    var map__11153__$1 = cljs.core.seq_QMARK_.call(null, map__11153) ? cljs.core.apply.call(null, cljs.core.hash_map, map__11153) : map__11153;
+    var date = cljs.core.get.call(null, map__11153__$1, new cljs.core.Keyword(null, "date", "date", 1016980256));
+    var place = cljs.core.get.call(null, map__11153__$1, new cljs.core.Keyword(null, "place", "place", 1120652409));
+    var index = cljs.core.get.call(null, map__11153__$1, new cljs.core.Keyword(null, "index", "index", 1114250308));
     return tailrecursion.hoplon.dt.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "fragment", new cljs.core.Keyword(null, "data-fragment-index", "data-fragment-index", 1446791946), "" + cljs.core.str.cljs$core$IFn$_invoke$arity$1(index), tailrecursion.hoplon.div.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "maroon6", place, tailrecursion.hoplon.span.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "gray6", date)));
   };
   var workshop_entry = function(var_args) {
@@ -49072,8 +49072,8 @@ hoplon.util.workshop_entry = function() {
     return workshop_entry__delegate.call(this, args__10163__auto__);
   };
   workshop_entry.cljs$lang$maxFixedArity = 0;
-  workshop_entry.cljs$lang$applyTo = function(arglist__24781) {
-    var args__10163__auto__ = cljs.core.seq(arglist__24781);
+  workshop_entry.cljs$lang$applyTo = function(arglist__11154) {
+    var args__10163__auto__ = cljs.core.seq(arglist__11154);
     return workshop_entry__delegate(args__10163__auto__);
   };
   workshop_entry.cljs$core$IFn$_invoke$arity$variadic = workshop_entry__delegate;
@@ -49082,8 +49082,8 @@ hoplon.util.workshop_entry = function() {
 hoplon.util.workshop_list = function workshop_list(list) {
   var attrs = cljs.core.into.call(null, cljs.core.PersistentVector.EMPTY, cljs.core.replicate.call(null, 20, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "class", "class", 1108647146), "workshop"], null)));
   return tailrecursion.hoplon.dl.call(null, cljs.core.map.call(null, function(attrs) {
-    return function(p1__24782_SHARP_, p2__24783_SHARP_) {
-      return cljs.core.apply.call(null, hoplon.util.workshop_entry, p1__24782_SHARP_, p2__24783_SHARP_);
+    return function(p1__11155_SHARP_, p2__11156_SHARP_) {
+      return cljs.core.apply.call(null, hoplon.util.workshop_entry, p1__11155_SHARP_, p2__11156_SHARP_);
     };
   }(attrs), attrs, list));
 };
@@ -49764,7 +49764,7 @@ tailrecursion.hoplon.app_pages._clojure_west_DOT_html.hoploninit = function hopl
     return hoplon.reveal.chapter.call(null, new cljs.core.Keyword(null, "title", "title", 1124275658), "The Road to a Perfect Curriculum", hoplon.reveal.slide.call(null, new cljs.core.Keyword(null, "title", "title", 1124275658), "At Cognation, August 2014", tailrecursion.hoplon.h4.call(null, "Two Sessions"), tailrecursion.hoplon.ul.call(null, tailrecursion.hoplon.li.call(null, "ClojureBridge Hackfest"), tailrecursion.hoplon.li.call(null, "ClojureBridge Hacking")), tailrecursion.hoplon.br.call(null), 
     tailrecursion.hoplon.br.call(null), tailrecursion.hoplon.h4.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "maroon", '"Making this Clojure community diverse is our mission!"')), hoplon.reveal.slide.call(null, new cljs.core.Keyword(null, "title", "title", 1124275658), "The Birth of a Drawing App", tailrecursion.hoplon.dl.call(null, tailrecursion.hoplon.dt.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "fragment", new cljs.core.Keyword(null, "data-fragment-index", 
     "data-fragment-index", 1446791946), "1", tailrecursion.hoplon.div.call(null, new cljs.core.Keyword(null, "style", "style", 1123684643), "vertical-align:top;", tailrecursion.hoplon.img.call(null, new cljs.core.Keyword(null, "src", "src", 1014018390), "img/alexm_and_quil.png", new cljs.core.Keyword(null, "style", "style", 1123684643), "border:0px"), "Alex Miller - Quil is good")), tailrecursion.hoplon.dt.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "fragment", new cljs.core.Keyword(null, 
-    "data-fragment-index", "data-fragment-index", 1446791946), "2", tailrecursion.hoplon.div.call(null, new cljs.core.Keyword(null, "style", "style", 1123684643), "vertical-align:top;", tailrecursion.hoplon.img.call(null, new cljs.core.Keyword(null, "src", "src", 1014018390), "img/russ_and_verysimple.png", new cljs.core.Keyword(null, "style", "style", 1123684643), "border:0px"), "Russ Olson - Start from very simple")), tailrecursion.hoplon.dt.call(null, new cljs.core.Keyword(null, "class", "class", 
+    "data-fragment-index", "data-fragment-index", 1446791946), "2", tailrecursion.hoplon.div.call(null, new cljs.core.Keyword(null, "style", "style", 1123684643), "vertical-align:top;", tailrecursion.hoplon.img.call(null, new cljs.core.Keyword(null, "src", "src", 1014018390), "img/russ_and_verysimple.png", new cljs.core.Keyword(null, "style", "style", 1123684643), "border:0px"), "Russ Olsen - Start from very simple")), tailrecursion.hoplon.dt.call(null, new cljs.core.Keyword(null, "class", "class", 
     1108647146), "fragment", new cljs.core.Keyword(null, "data-fragment-index", "data-fragment-index", 1446791946), "3", tailrecursion.hoplon.h3.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "maroon", "Let's do it!")))), hoplon.reveal.slide.call(null, new cljs.core.Keyword(null, "title", "title", 1124275658), "The Very Simple Quil App", tailrecursion.hoplon.div.call(null, new cljs.core.Keyword(null, "class", "class", 1108647146), "code", hoplon.reveal.highlight.call(null, 
     new cljs.core.Keyword(null, "class", "class", 1108647146), "clojure", '(ns drawing.lines\n  (:require [quil.core :as q]))\n(defn setup []\n  (q/frame-rate 30)\n  (q/color-mode :rgb)\n  (q/stroke 255 0 0))\n(defn draw []\n  (q/line 0 0 (q/mouse-x) (q/mouse-y))\n  (q/line 200 0 (q/mouse-x) (q/mouse-y))\n  (q/line 0 200 (q/mouse-x) (q/mouse-y))\n  (q/line 200 200 (q/mouse-x) (q/mouse-y)))\n(q/defsketch hello-lines\n  :title "You can see lines"\n  :size [500 500]\n  :setup setup\n  :draw draw)'))), 
     hoplon.reveal.slide.call(null, new cljs.core.Keyword(null, "title", "title", 1124275658), "The Very Simple Quil App is..", tailrecursion.hoplon.canvas.call(null, new cljs.core.Keyword(null, "id", "id", 1013907597), "drawing")), hoplon.reveal.slide.call(null, new cljs.core.Keyword(null, "title", "title", 1124275658), "Got a Contribution to the Quil App", hoplon.reveal.bullet.call(null, '"Add mouse-color function to set color of line based on mouse coordinates. Thanks @alandipert"'), tailrecursion.hoplon.div.call(null, 
